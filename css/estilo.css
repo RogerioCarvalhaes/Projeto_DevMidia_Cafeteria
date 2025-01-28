@@ -1,0 +1,44 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Seção Topo */
+.secao-topo {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: #604829;
+}
+
+.logo {
+    position: relative;
+    left: 15%;
+    width: 100px;
+}
+
+.container-links {
+    font-family: 'Oswald';
+    font-size: 18px;
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.container-links a {
+    background: none;
+    color: #c4a47c;
+    box-shadow: /*ATENÇÃO*/
+}
+
+/* Seção Banner */
+.secao-banner {
+    height: 100vh;
+    background-image: url("img\parallax-imagem1.png");
+}
