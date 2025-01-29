@@ -162,3 +162,60 @@
     text-align: center;
     margin: 0 auto;
 }
+
+/* Seção Horários */
+.secao-horarios {
+    background-image: url(img/cafeteria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
+    margin: 0 auto;
+    position: relative;
+   
+}
+
+.subtitulo-horarios {
+    font-family: 'Oswald';
+    font-size: 18px;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.lista-horarios {
+    list-style-type: none;
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: #fff;
+    width: 768px;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.lista-horarios li {
+    position: relative;
+}
+
+.lista-horarios li div {
+    width: 70%;
+    height: 1px;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #acacac;
+}
+
+.lista-horarios li p {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
