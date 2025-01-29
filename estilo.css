@@ -3,9 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -32,13 +29,136 @@ a {
 }
 
 .container-links a {
-    background: none;
+    
+    margin-left: 15px;
     color: #c4a47c;
-    box-shadow: /*ATENÇÃO*/
+    text-shadow: 3px 5px 2px #000000;
 }
 
-/* Seção Banner */
+/* Seção Banner*/
 .secao-banner {
     height: 100vh;
-    background-image: url("img\parallax-imagem3.jpg");
+    background-image: url(img/parallax-imagem1.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo-banner {
+    text-align: center;
+    font-family: 'Fraunces';
+    font-size: 100px;
+    color: #fff;
+    position: relative;
+    top: 45%;
+    left: 0;
+    right: 0;
+}
+
+/* Seção Informações */
+.container-texto-informacoes {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.subtitulo-informacoes {
+    font-family: 'Oswald';
+    font-size: 18px;
+    color: #c4a47c;
+    text-align: center;
+}
+
+.paragrafo-informacoes {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #666;
+    max-width: 1024px;
+    padding: 0 20px;
+    line-height: 25px;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.subtitulo-paradax {
+    padding: 80px 0;
+    font-family: 'Fraunces';
+    font-size: 24px;
+    color: #fff;
+    background-color: #604829;
+    position: relative;
+    top: 45%;
+    left: 0;
+    right: 0;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* imagem Paradaxx informações */
+.container-imagem-informacoes1 {
+    height: 50vh;
+    background-image: url(img/parallax-imagem2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-imagem-informacoes2 {
+    height: 50vh;
+    background-image: url(img/parallax-imagem3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Seção Contato */
+.secao-contatos {
+    position: relative;
+    height: 100vh;
+    background-image: url(img/parallax-imagem4.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.subtitulo-contatos {
+    font-family: 'Oswald';
+    font-size: 24px;
+    color: #fff;
+    background-color: #604829;
+    width: 500px;
+    position: absolute;
+    padding: 10px;
+    top: 10%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mapa {
+    width: 1024px;
+    height: 450px;
+    position: absolute;
+    top: 23%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contatos {
+    font-family: 'Oswald';
+    font-size: 16px;
+    color: #fff;
+    background-color: #604829;
+    width: 500px;
+    padding: 10px;
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
 }
