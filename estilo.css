@@ -1,144 +1,152 @@
-/* Global */
+/* estilos Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    letter-spacing: 2px;
 }
+
+.secao-banner, .container-imagem1,
+.container-imagem2, .secao-contatos,
+.secao-horarios {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    
+}
+/* Fim Estilos Globais*/
+
+
 
 /* Seção Topo */
 .secao-topo {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
     background-color: #604829;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
 }
 
-.logo {
-    position: relative;
-    left: 15%;
+.secao-topo img {
     width: 100px;
+    position: absolute;
+    left: 10%;
 }
 
 .container-links {
-    font-family: 'Oswald';
-    font-size: 18px;
     position: absolute;
     top: 35%;
     right: 15%;
+    margin-left: 30px;
 }
 
 .container-links a {
-    
-    margin-left: 15px;
-    color: #c4a47c;
-    text-shadow: 3px 5px 2px #000000;
-}
-
-/* Seção Banner*/
-.secao-banner {
-    height: 100vh;
-    background-image: url(img/parallax-imagem1.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.titulo-banner {
-    text-align: center;
-    font-family: 'Fraunces';
-    font-size: 100px;
-    color: #fff;
-    position: relative;
-    top: 45%;
-    left: 0;
-    right: 0;
-}
-
-/* Seção Informações */
-.container-texto-informacoes {
-    background-color: #fff;
-    padding: 80px 0;
-}
-
-.subtitulo-informacoes {
     font-family: 'Oswald';
     font-size: 18px;
     color: #c4a47c;
+    text-shadow: 5px 5px 3px #000000;
+}
+/* Fim Seção Topo */
+
+
+
+/* Seção Banner */
+.secao-banner {
+    background-image: url(img/parallax-imagem1.png);
+    height: 100vh;
+}
+
+.secao-banner h1 {
+    font-family: 'Fraunces';
+    font-size: 100px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+/* Fim Seção Banner */
+
+
+
+/* Seção Informações */
+.container-texto {
+    background-color: #fff;
+    padding: 80px 0;
     text-align: center;
 }
 
-.paragrafo-informacoes {
+.container-texto h2 {
+    font-family: 'Oswald';
+    font-size: 18px;
+    color: #c4a47c;
+    margin: 30px auto;
+}
+
+.container-texto p {
     font-family: 'Lato';
     font-size: 16px;
     color: #666;
     max-width: 1024px;
     padding: 0 20px;
-    line-height: 25px;
-    text-align: center;
-    margin: 30px auto 0 auto;
+    margin: 30px auto;
+    line-height: 35px;
 }
 
-.subtitulo-paradax {
-    padding: 80px 0;
+.secao-informacoes h3 {
+    background-color: #604829;
+    color: #fff;
     font-family: 'Fraunces';
     font-size: 24px;
-    color: #fff;
-    background-color: #604829;
-    position: relative;
+    position: absolute;
     top: 45%;
     left: 0;
     right: 0;
     width: 500px;
     padding: 10px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
 }
 
-/* imagem Paradaxx informações */
-.container-imagem-informacoes1 {
-    height: 50vh;
+.container-imagem1 {
     background-image: url(img/parallax-imagem2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container-imagem-informacoes2 {
     height: 50vh;
+}
+
+.container-imagem2 {
     background-image: url(img/parallax-imagem3.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 50vh;
 }
+/* Fim Seção Informações */
 
-/* Seção Contato */
+
+
+/* Seção Contatos */
 .secao-contatos {
-    position: relative;
-    height: 100vh;
     background-image: url(img/parallax-imagem4.png);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    height: 100vh;
 }
 
-.subtitulo-contatos {
+.secao-contatos h2 {
     font-family: 'Oswald';
     font-size: 24px;
-    color: #fff;
     background-color: #604829;
+    color: #fff;
     width: 500px;
-    position: absolute;
     padding: 10px;
+    position: absolute;
     top: 10%;
-    right: 0;
     left: 0;
+    right: 0;
     text-align: center;
     margin: 0 auto;
 }
 
-.mapa {
-    width: 1024px;
+.secao-contatos iframe {
+    max-width: 1024px;
     height: 450px;
     position: absolute;
     top: 23%;
@@ -149,9 +157,6 @@
 }
 
 .contatos {
-    font-family: 'Oswald';
-    font-size: 16px;
-    color: #fff;
     background-color: #604829;
     width: 500px;
     padding: 10px;
@@ -163,35 +168,36 @@
     margin: 0 auto;
 }
 
-/* Seção Horários */
-.secao-horarios {
-    background-image: url(img/cafeteria.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 85vh;
-    margin: 0 auto;
-    position: relative;
-   
-}
-
-.subtitulo-horarios {
-    font-family: 'Oswald';
-    font-size: 18px;
-    color: #fff;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    left: 0;
-    text-align: center;
-}
-
-.lista-horarios {
-    list-style-type: none;
+.contatos p {
     font-family: 'Oswald';
     font-size: 16px;
     color: #fff;
-    width: 768px;
+}
+/* Fim Seção Contatos */
+
+
+
+/* Seção Horários */
+.secao-horarios {
+    background-image: url(img/cafeteria.jpg);
+    height: 85vh;
+}
+
+.secao-horarios h2 {
+    font-family: 'Oswald';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lista-horarios {
+    list-style: none;
+    width: 700px;
     position: absolute;
     bottom: 20%;
     left: 0;
@@ -199,23 +205,75 @@
     margin: 0 auto;
 }
 
-.lista-horarios li {
+.secao-horarios .lista-horarios li {
+    line-height: 40px;
     position: relative;
+    font-family: 'Oswald';
+    font-size: 16px;
 }
 
-.lista-horarios li div {
+li h3 {
+    color: #fff;
+}
+
+li div {
+    background-color: #acacac;
+    position: absolute;
     width: 70%;
     height: 1px;
-    position: absolute;
-    bottom: 50%;
+    top: 50%;
     left: 0;
     right: 0;
-    margin: 0 auto;
-    background-color: #acacac;
+    margin: auto;
 }
 
-.lista-horarios li p {
+li p, span {
+    color: #fff;
     position: absolute;
-    left: 0;
+    top: 0;
     right: 0;
+    margin: auto;
 }
+
+li span {
+    color: #c4a47c
+}
+/* Fim Seção Horários */
+
+
+
+/* Seção Rodapé */
+.secao-rodape {
+    height: 100px;
+    position: relative;
+    padding: 20px 0;
+    background-color: #000000;
+}
+
+.secao-rodape .ico {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    background-image: url(img/seta-para-cima.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #c4a47c;
+    border-radius: 4px;
+}
+
+.texto-rodape p {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.texto-rodape p a {
+    color: #c4a47c;
+    letter-spacing: normal;
+}
+
+/* Fim Seção Rodapé */
