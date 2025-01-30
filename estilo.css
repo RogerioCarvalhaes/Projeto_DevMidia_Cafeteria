@@ -223,7 +223,7 @@ li div {
     height: 1px;
     top: 50%;
     left: 0;
-    right: 0;
+    right: 25px;
     margin: auto;
 }
 
@@ -236,7 +236,10 @@ li p, span {
 }
 
 li span {
-    color: #c4a47c
+    color: #c4a47c;
+    position: absolute;
+    top: 0;
+    right: 22px;
 }
 /* Fim Seção Horários */
 
