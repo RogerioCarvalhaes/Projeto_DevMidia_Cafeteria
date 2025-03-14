@@ -8,8 +8,7 @@
 }
 
 .secao-banner, .container-imagem1,
-.container-imagem2, .secao-contatos,
-.secao-horarios {
+.container-imagem2, .secao-contatos {
     position: relative;
     background-position: center;
     background-size: cover;
@@ -179,67 +178,51 @@
 
 /* Seção Horários */
 .secao-horarios {
+    padding: 100px 20px;
     background-image: url(img/cafeteria.jpg);
-    height: 85vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .secao-horarios h2 {
-    font-family: 'Oswald';
-    font-size: 25px;
     color: #fff;
-    position: absolute;
-    top: 20%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .lista-horarios {
-    list-style: none;
-    width: 700px;
-    position: absolute;
-    bottom: 20%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 768px;
 }
 
-.secao-horarios .lista-horarios li {
-    line-height: 40px;
-    position: relative;
-    font-family: 'Oswald';
-    font-size: 16px;
-}
-
-li h3 {
+.lista-horarios li {
     color: #fff;
+    margin-bottom: 15px;
+    list-style: none;    
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-li div {
-    background-color: #acacac;
-    position: absolute;
-    width: 70%;
+.lista-horarios li div {
     height: 1px;
-    top: 50%;
-    left: 0;
-    right: 25px;
-    margin: auto;
+    background-color: gray;
+    flex: 1 1 auto;
 }
 
-li p, span {
-    color: #fff;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: auto;
+.lista-horarios li h3 {
+    flex: 0 1 80px;
 }
 
-li span {
+.lista-horarios li span, p {
+    flex: 0 1 120px;
+    text-align: right;
+}
+
+.lista-horarios li span {
     color: #c4a47c;
-    position: absolute;
-    top: 0;
-    right: 22px;
 }
 /* Fim Seção Horários */
 
