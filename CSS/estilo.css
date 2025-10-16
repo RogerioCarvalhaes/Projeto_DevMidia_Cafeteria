@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-decoration: none;
     letter-spacing: 2px;
 }
@@ -13,6 +12,11 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;    
+}
+
+.limite {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 /* Fim Estilos Globais*/
 
@@ -25,18 +29,19 @@
     height: 100px;
     position: fixed;
     z-index: 1;
+    margin: 0 auto;
 }
 
 .secao-topo img {
     width: 100px;
     position: absolute;
-    left: 10%;
+    left: 10px;
 }
 
 .container-links {
     position: absolute;
     top: 35%;
-    right: 15%;
+    right: 10px;
     margin-left: 30px;
 }
 
@@ -52,7 +57,7 @@
 
 /* Seção Banner */
 .secao-banner {
-    background-image: url(img/parallax-imagem1.png);
+    background-image: url('../img/parallax-imagem1.png');
     height: 100vh;
 }
 
@@ -111,12 +116,12 @@
 }
 
 .container-imagem1 {
-    background-image: url(img/parallax-imagem2.jpg);
+    background-image: url('../img/parallax-imagem2.jpg');
     height: 50vh;
 }
 
 .container-imagem2 {
-    background-image: url(img/parallax-imagem3.jpg);
+    background-image: url('../img/parallax-imagem3.jpg');
     height: 50vh;
 }
 /* Fim Seção Informações */
@@ -125,7 +130,7 @@
 
 /* Seção Contatos */
 .secao-contatos {
-    background-image: url(img/parallax-imagem4.png);
+    background-image: url('../img/parallax-imagem4.png');
     height: 100vh;
 }
 
@@ -179,7 +184,7 @@
 /* Seção Horários */
 .secao-horarios {
     padding: 100px 20px;
-    background-image: url(img/cafeteria.jpg);
+    background-image: url('../img/cafeteria.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -243,7 +248,7 @@
     position: absolute;
     bottom: 80px;
     right: 50px;
-    background-image: url(img/seta-para-cima.png);
+    background-image: url('../img/seta-para-cima.png');
     background-position: center;
     background-size: cover;
     background-color: #c4a47c;
@@ -263,3 +268,95 @@
 }
 
 /* Fim Seção Rodapé */
+
+/* Responsivo */
+@media (max-width: 800px) {
+    .secao-topo img {
+        width: 80px;
+        left: 5px;
+    }
+
+    .container-links {
+        top: 30%;
+        right: 5px;
+    }
+
+    .container-links a {
+        font-size: 14px;
+    }
+
+    .secao-banner h1 {
+        font-size: 30px;
+        padding: 0 10px;
+        text-align: center;
+    }
+
+    .container-texto p {
+        font-size: 14px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .secao-informacoes h3 {
+        width: 90%;
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .secao-contatos h2 {
+        width: 90%;
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .secao-contatos iframe {
+        width: 90%;
+        height: 300px;
+        top: 25%;
+    }
+
+    .contatos {
+        width: 90%;
+        bottom: 5%;
+        padding: 8px;
+    }
+
+    .contatos p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .secao-horarios {
+        padding: 80px 10px;
+        text-align: center;
+    }
+
+    .lista-horarios {
+        max-width: 100%;
+    }
+
+    .lista-horarios li h3 {
+        flex: 0 1 80px;
+        font-size: 12px;
+    }
+
+    .lista-horarios li span, p {
+        flex: 0 1 100px;
+        font-size: 12px;
+    }
+
+    .lista-horarios li span {
+        text-align: center;
+    }
+
+    .secao-rodape .ico {
+        width: 40px;
+        height: 40px;
+        bottom: 60px;
+        right: 20px;
+    }
+
+    .texto-rodape p {
+        font-size: 14px;
+    }
+}
