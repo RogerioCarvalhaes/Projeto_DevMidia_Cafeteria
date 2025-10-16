@@ -271,18 +271,29 @@
 
 /* Responsivo */
 @media (max-width: 800px) {
+    .secao-rodape .ico {
+    top: -50px;
+    }
+
+
     .secao-topo img {
         width: 80px;
-        left: 5px;
+        left: 15px;
+        top: 10px;        
     }
 
     .container-links {
-        top: 30%;
-        right: 5px;
+        top: 40px;
+        right: 15px;
     }
 
     .container-links a {
         font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+        margin: 0 auto;
     }
 
     .secao-banner h1 {
@@ -301,6 +312,7 @@
         width: 90%;
         font-size: 20px;
         padding: 8px;
+        margin: 0 auto;
     }
 
     .secao-contatos h2 {
